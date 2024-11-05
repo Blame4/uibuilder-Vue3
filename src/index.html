@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vue3 as EMS with new uib client - Node-RED uibuilder</title>
+    <meta name="description" content="Node-RED uibuilder - Vue3 as ESM with new uib client">
+    <link rel="icon" href="./images/node-blue.ico">
+
+    <!-- Your own CSS -->
+    <link type="text/css" rel="stylesheet" href="./index.css" media="all">
+
+    <!-- NOTE that this is loaded as a MODULE & other libraries loaded by it -->
+    <script type="module" async src="./index.js">/* Imports uibuilder + your custom code */</script>
+
+</head>
+
+<body class="uib">
+
+    <div id="app">
+
+        <mycomponent></mycomponent>
+
+
+    </div>
+
+    <script nomodule>
+        document.getElementById('app').innerHTML = "Your browser doesn't support JavaScript modules :(";
+    </script>
+
+</body>
+
+</html>
