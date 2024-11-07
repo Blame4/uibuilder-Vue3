@@ -7,8 +7,6 @@ import * as Vue from '../uibuilder/vendor/vue/dist/vue.esm-browser.prod.js' // D
 // import { createApp } from 'https://cdn.jsdelivr.net/npm/vue@3/dist/vue.esm-browser.js' // As above but loaded remotely
 import { loadModule } from '../uibuilder/vendor/vue3-sfc-loader/dist/vue3-sfc-loader.esm.js'
 // Import the custom component directly (Note that it is a .js file, not a .vue file)
-// import MyComponent from './mycomponent.js'
-// import '../uibuilder/vendor/http-vue-loader/src/httpVueLoader.js'
 
 // Using the Vue options API style for beginner simplicity
 // No need to pre-define Quasar's $q when working with the options API
@@ -48,7 +46,7 @@ const app = Vue.createApp({
     },
 
     components: {
-        mycomponent: Vue.defineAsyncComponent(() => loadModule('my-component.vue', options))
+        mycomponent: Vue.defineAsyncComponent(() => loadModule('App.vue', options))
     },
 
     // Dynamic data
